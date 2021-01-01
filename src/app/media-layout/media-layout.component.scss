@@ -1,0 +1,42 @@
+
+
+.container{
+
+  background:pink;
+  font-size: 2rem;
+}
+
+
+.item{
+  padding: 5%;
+}
+
+
+//section - block model
+.item-a{
+  background-color: yellow;
+
+}
+//section - block model
+.item-b{
+  background-color: yellowgreen;
+}
+
+//반응형 웹디자인 각 1단 block을 가진 박스모델이 브라우저 크기가 커지면 2옆으로 붙도록 설계
+
+//태블릿 사이즈 (약 700px이상) 될때 해당 source 적용
+@media screen and (min-width:700px){
+  .item{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+  }
+
+  .item-a{
+    width: 30%;
+  }
+
+  .item-b{
+    width: 50%;
+  }
+}
