@@ -1,0 +1,18 @@
+li{color: red !important;}
+
+#idsel{color: blue;}
+
+.classsel{color: green;}
+
+/* html에서 구체적이고 명시적인 속성이 우선순위로 css를 적용하게된다 */
+
+/*
+중첩 속성을 적용할 시에 해당 순서로 적용하게 된다.
+1. style
+2. id
+3. class
+4. tag
+
+단 우선순위를 높이고 싶다면 뒤에 !important를 선언하면 되지만
+우선순위 규칙에 위배되기때문에 좋은 개발방법은 아니다.
+*/

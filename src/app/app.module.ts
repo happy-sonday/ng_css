@@ -8,6 +8,7 @@ import { MediaLayoutComponent } from './media-layout/media-layout.component';
 import { SelectorComponent } from './selector/selector.component';
 import { PseudoComponent } from './pseudo/pseudo.component';
 import { InheritenceTestComponent } from './inheritence-test/inheritence-test.component';
+import { CascadingTestComponent } from './cascading-test/cascading-test.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { InheritenceTestComponent } from './inheritence-test/inheritence-test.co
     MediaLayoutComponent,
     SelectorComponent,
     PseudoComponent,
-    InheritenceTestComponent
+    InheritenceTestComponent,
+    CascadingTestComponent
   ],
   imports: [
     BrowserModule,
