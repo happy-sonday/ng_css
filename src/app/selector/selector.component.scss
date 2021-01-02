@@ -4,6 +4,8 @@ ol,ul{
 ul li{
   color:red;
 }
+//화살표는 ol로 감싸고 있는 직계자식만 선택 직계자식 안에
+//ol,li 손자 선택자는 적용되지 않는다.
 #lecture>li{
   border:1px solid red;
 }

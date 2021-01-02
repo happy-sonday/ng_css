@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ClassicLayoutComponent } from './classic-layout/classic-layout.component';
 import { MediaLayoutComponent } from './media-layout/media-layout.component';
 import { SelectorComponent } from './selector/selector.component';
+import { PseudoComponent } from './pseudo/pseudo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ClassicLayoutComponent,
     MediaLayoutComponent,
-    SelectorComponent
+    SelectorComponent,
+    PseudoComponent
   ],
   imports: [
     BrowserModule,
