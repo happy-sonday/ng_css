@@ -7,6 +7,7 @@ import { ClassicLayoutComponent } from './classic-layout/classic-layout.componen
 import { MediaLayoutComponent } from './media-layout/media-layout.component';
 import { SelectorComponent } from './selector/selector.component';
 import { PseudoComponent } from './pseudo/pseudo.component';
+import { InheritenceTestComponent } from './inheritence-test/inheritence-test.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PseudoComponent } from './pseudo/pseudo.component';
     ClassicLayoutComponent,
     MediaLayoutComponent,
     SelectorComponent,
-    PseudoComponent
+    PseudoComponent,
+    InheritenceTestComponent
   ],
   imports: [
     BrowserModule,

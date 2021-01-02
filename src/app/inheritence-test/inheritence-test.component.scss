@@ -1,0 +1,21 @@
+/* li{
+  color: red;
+}
+
+hl{
+  color: red;
+}
+ */
+
+ //부모 클래스에 포함된 하위요소(자식)들은 모두 적용
+ .inheritence_container{
+   color: red;//상속
+   border : 1px solid red;//상속되지 않음
+   //상속하는 속성과 상속하지 않는 속성
+ }
+
+ #child{
+   color:skyblue;
+ }
+
+
