@@ -12,10 +12,15 @@ hl{
    color: red;//상속
    border : 1px solid red;//상속되지 않음
    //상속하는 속성과 상속하지 않는 속성
+
  }
 
  #child{
    color:skyblue;
  }
+
+ //https://www.w3.org/TR/CSS21/propidx.html
+ /* 상속과 상속이되지 않는 속성을 확인 하려면 해당 리스트 참조 */
+
 
 

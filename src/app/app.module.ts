@@ -9,6 +9,7 @@ import { SelectorComponent } from './selector/selector.component';
 import { PseudoComponent } from './pseudo/pseudo.component';
 import { InheritenceTestComponent } from './inheritence-test/inheritence-test.component';
 import { CascadingTestComponent } from './cascading-test/cascading-test.component';
+import { FontTestComponent } from './font-test/font-test.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CascadingTestComponent } from './cascading-test/cascading-test.componen
     SelectorComponent,
     PseudoComponent,
     InheritenceTestComponent,
-    CascadingTestComponent
+    CascadingTestComponent,
+    FontTestComponent
   ],
   imports: [
     BrowserModule,
