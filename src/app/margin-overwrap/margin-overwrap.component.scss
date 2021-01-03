@@ -1,0 +1,27 @@
+h1{
+
+  //해당 태그들이 maring값이 겹쳐져있는데
+  //개발자도구를 통해서 값을 임의로 줄여도 간격이 좁혀지지 않음을 확인할 수 있다.
+  //두개의 겹치고 있는 margin 중 큰 값이 margin으로 적용된다
+  border: 10px solid red;
+  margin: 100px;
+}
+
+/*
+요소에 border값이 정의되지 않을때 자식의 요소의 50px을 포함한 maing100px을 적용하여
+다른 요소와의 거리를 두게된다
+
+만약 부모의 border요소를 통해 경계를 만들게되면
+자식의 margin 50px과 별개로 부모요소를 구분하는 border에 의해 border위로 margin 100px이 생긴다.
+*/
+.parent{
+  border:1px solid tomato;
+  margin-top: 20px;
+
+}
+
+.child{
+  background-color: powderblue;
+  margin-top: 20px;
+
+}

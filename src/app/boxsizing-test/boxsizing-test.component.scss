@@ -1,0 +1,27 @@
+div{
+  margin: 10px;
+  width: 150px;
+  //원래는 기본 content-box
+  box-sizing: border-box;
+  //border영역까지 포함하여 (30*2)+90 150
+
+}
+
+#small{
+  border: 10px solid red;
+}
+
+#large{
+  border: 30px solid red;
+}
+
+#borderbox{
+  box-sizing: border-box;
+  width: 170px;
+  height: 170px;
+  border: 1px solid red;
+
+  //box-sizing을 170*170인 경우 padding boder사이즈가 0px로 영역을 할당하고
+  //border에 1px를 주게되는 경우 width와 height의 상하좌우에 1px을 뺀 168*168 content영역이 확인됨을 볼 수 있다
+
+}
