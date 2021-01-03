@@ -10,6 +10,9 @@ import { PseudoComponent } from './pseudo/pseudo.component';
 import { InheritenceTestComponent } from './inheritence-test/inheritence-test.component';
 import { CascadingTestComponent } from './cascading-test/cascading-test.component';
 import { FontTestComponent } from './font-test/font-test.component';
+import { BlockTestComponent } from './block-test/block-test.component';
+import { BoxsizingTestComponent } from './boxsizing-test/boxsizing-test.component';
+import { MarginOverwrapComponent } from './margin-overwrap/margin-overwrap.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { FontTestComponent } from './font-test/font-test.component';
     PseudoComponent,
     InheritenceTestComponent,
     CascadingTestComponent,
-    FontTestComponent
+    FontTestComponent,
+    BlockTestComponent,
+    BoxsizingTestComponent,
+    MarginOverwrapComponent
   ],
   imports: [
     BrowserModule,
