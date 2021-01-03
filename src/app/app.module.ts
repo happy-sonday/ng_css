@@ -13,6 +13,7 @@ import { FontTestComponent } from './font-test/font-test.component';
 import { BlockTestComponent } from './block-test/block-test.component';
 import { BoxsizingTestComponent } from './boxsizing-test/boxsizing-test.component';
 import { MarginOverwrapComponent } from './margin-overwrap/margin-overwrap.component';
+import { PositionTestComponent } from './position-test/position-test.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MarginOverwrapComponent } from './margin-overwrap/margin-overwrap.compo
     FontTestComponent,
     BlockTestComponent,
     BoxsizingTestComponent,
-    MarginOverwrapComponent
+    MarginOverwrapComponent,
+    PositionTestComponent
   ],
   imports: [
     BrowserModule,
