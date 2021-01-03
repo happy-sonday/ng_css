@@ -1,0 +1,86 @@
+
+.rel{
+  border:5px solid aquamarine;
+  margin:10px;
+}
+
+/* 기본적으로 부모 컨테이너의 margin 10px을 상속받아
+부모 컨테이너 기준으로 10px떨어져있고
+부모컨테이너 기준 left top 값이 적용되어 요소가 멀어지게된다.
+영역할당은 block사이즈처럼 가져가지만 absolute로 가져가게되면 content영역만 할당하게 된다.
+*/
+.me{
+  border: blueviolet solid 2px;
+  background-color: darkgoldenrod;
+  position: relative;
+  left: 5px;
+  top: 10px;
+}
+
+
+#other,#parent,#grand {
+  border: 5px solid;
+
+
+}
+//만약 parent의 relative가 없고
+//부모위의 컨테이너 grand에 relative position을 주면
+//absolute는 해당 컨테이너를 기준으로 위치값을 적용하게된다.
+#grand{
+  position: relative;
+
+}
+#parent{
+  //position: static;
+  //position: relative;
+}
+#me{
+  //postion 기본값 static
+  //부모에 대해서 상대적으로 위치를 설정
+  //position: relative;
+
+  background-color: tomato;
+  color: white;
+  position: absolute;
+  //아무것도 없을시 부모기준 margin overwarp으로 바로 아래에 붙게된다.
+  //absoulte를 하게되면 부모와의 연결고리가 끊겨져 마치 parent의 자식이 아닌것처럼 단독으로 움직이게된다.
+
+
+  left: 0px;
+  top: 15px;
+
+  //만약 부모의 postion값을 기본값 static이 아닌 relative로 설정시
+  //부모의 컨테이너 기준으로 absolut값을 적용하게 된다.
+  //따라서 기본값이 아닌 다른 position을 가진 부모컨테이너가 나타날때까지 독립해서 absolute값을 가지게된다.
+  //거의 방방뛰어다니네..;;
+}
+
+  /*fix 연습  */
+  .fix_other, .fix_parent{
+    border:5px solid tomato;
+  }
+
+  .fix_me{
+    font-size: 2rem;
+    background-color:hotpink;
+    color:white;
+
+    //scroll로 부터 완전 독립되서 고정된다.
+    position: fixed;
+    width: 100%;//fixed일때 사용
+
+    //left:0;
+    //right: 0;
+    //top:0;
+    bottom: 0;
+    text-align: center;
+
+    //absolute처럼 width와 height를 지정하지않으면 부모와 연결관계가 끊겨서
+    //fixed 요소는 content영역만 가지게된다.
+
+
+  }
+  .large{
+    height: 1000px;
+    background-color: goldenrod;
+  }
