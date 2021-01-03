@@ -14,6 +14,8 @@ import { BlockTestComponent } from './block-test/block-test.component';
 import { BoxsizingTestComponent } from './boxsizing-test/boxsizing-test.component';
 import { MarginOverwrapComponent } from './margin-overwrap/margin-overwrap.component';
 import { PositionTestComponent } from './position-test/position-test.component';
+import { FluxTestComponent } from './flux-test/flux-test.component';
+import { FlexGrownshrinkComponent } from './flex-grownshrink/flex-grownshrink.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PositionTestComponent } from './position-test/position-test.component';
     BlockTestComponent,
     BoxsizingTestComponent,
     MarginOverwrapComponent,
-    PositionTestComponent
+    PositionTestComponent,
+    FluxTestComponent,
+    FlexGrownshrinkComponent
   ],
   imports: [
     BrowserModule,

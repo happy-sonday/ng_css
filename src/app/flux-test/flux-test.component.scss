@@ -1,0 +1,23 @@
+
+//부모 컨테이너
+.container{
+  background-color: powderblue;
+  //block모델에서 item을 모두 inline형식으로 바꿔버린다
+  display: flex;
+  font-size: 2rem;
+  //초기 block모델처럼 수평영역을 수직으로 배열
+  //flex-direction: column;
+  //item을 역방향으로
+  //flex-direction: column-reverse;
+  flex-direction: row;
+
+  height: 600px;
+
+
+
+}
+.item{
+  background-color: tomato;
+  color:white;
+  border:1px solid
+}

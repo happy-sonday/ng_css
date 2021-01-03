@@ -1,0 +1,32 @@
+
+//부모 컨테이너
+.container{
+  background-color: powderblue;
+  display: flex;
+  font-size: 2rem;
+  flex-direction: row;
+  height: 600px;
+
+
+
+}
+.item{
+  background-color: tomato;
+  color:white;
+  border:1px solid;
+  //모든 flew grow n분할
+  //flex-grow: 1;/* default 0 */
+}
+
+//특정아이템의 크기를 주고싶을때 ex.2번째아이템
+.item:nth-child(2){
+  flex-basis: 600px;
+
+  //여백이까지 줄어들게되면 보통 2의 여백만 줄어들게된다
+  //이것을 shrink:0;을 주면 자신의 영역으로 스크롤이 침범할때까지 줄어들지않는다.
+  flex-shrink: 2;
+
+  //cascading에 의행 우선순위로 적용
+/*   background-color: yellow;
+  flex-grow:3; */
+}
