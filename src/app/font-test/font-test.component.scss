@@ -1,0 +1,46 @@
+#px{font-size: 16px;}
+#rem{
+  //글씨상단여백 줄이는 속성
+  /* position: relative;
+  top: -10px; */
+  font-size: 3rem;}
+
+  h1 {
+    color: tomato;
+    //사용자의 컴퓨터에는 css에 작성한 폰트가 설치되어있지 않을 수 있다.
+    //원하지 않는 폰트 디자인이 나올 수 있기때문에  verdana를 보여주고 그래도 없는경우에도 Hevetica Neue가 나오게되는데
+    //주의사항, font이름에 띄어쓰기 존재할경우 큰따옴표로 묶어줘야 한다.
+    font-family: arial, Verdana, Arial, "Helvetica Neue", serif;//font 지정
+    font-weight: bold;
+    //px로 쓰면 크기에따라 상대적으로 변하므로 2라는 배수단위로 절대치로배율로 바꿔 입력한다
+    line-height: 2;
+
+
+  }
+  //같은 h1 태그 셀레터이지만 id 태그를 캐스케이딩 우선순위로 적용하게 된다.
+  #total_font{
+    font:bold 2rem/2 arial, verdana, "Helvetica Neue", monospace;
+    //font-family/line-height font-family
+  }
+
+  p{
+    text-align: justify;//양쪽 균등하게 위치
+    border: 1px solid red;
+    //영문폰트 끝에 장식
+  }
+  //webfont란 사용자가 없는 폰트를 서버에서 사용자의 웹브라우저가 다운로드받아서 사용할 수 있도록 하는것
+  @import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+  .import{
+    font-size: 3rem;
+    font-family: 'Kirang Haerang', cursive;
+  }
+  //직접 업로드한 폰트 사용하기
+  //global로 'BMEuljiro10'를 등록하여 사용
+  //assets/css 와 assets/font를 참조
+.fontface{
+  font-family: 'BMEuljiro10';
+  font-size: 3rem;
+}
+
+
+
