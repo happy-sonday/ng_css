@@ -1,0 +1,22 @@
+.collapse {
+  border-collapse: collapse;
+}
+.separate {
+  border-collapse: separate;
+}
+table {
+  //display: inline-table;
+  margin: 1em;
+  //border: dashed 6px;
+  border-width: 6px;
+  border-spacing: 20px 10px;
+}
+table th, table td {
+  border: solid 1px;
+
+  border-bottom-color: springgreen;
+
+}
+
+
+

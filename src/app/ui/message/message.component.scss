@@ -1,0 +1,58 @@
+/* message */
+.user-photo {
+  flex-shrink: 0; //이미지가 화면크기 컨텐츠 내용에따라 찌그러지지 않도록 설정
+  background-image: url(../../../assets/images/apeach_sample.jpg);
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  background-color: gold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; //축소되서전면이 들어가게 된다
+}
+
+.user-item {
+  display: flex; //단독으로 속성 지정시컨텐츠 내용에 따라 찌그러짐
+  //따라서 user-photo에 찌그러지지 않도록 shrink 기본값 1을 0으로 설정한다
+  //margin-bottom: 1.5rem; //html의 폰트사이즈를 따라 커지겠다는 것이고
+  margin-bottom: 1.5em; // 은 해당 user-item 엘리먼트 폰트사이즈를 기준으로 하겠다는 것
+  //현재는 font-size를 지정한것이 없기때문에 1.5rem=1.5em이 같은것
+  font-size: 20px; //이렇게 폰트사이즈를 지정할 경우 1.5rem은 html의 영향을 받기때문에 화면이 커져도 margin 변화가 화면이 작았을때와 차이가 없지만
+  //em의 경우 user-item의 element기분의 font-size를 기준으로 하기때문에 비율만큼 영향을받아 요소간의 margin이 작았을때비해 더 커진다
+}
+
+/* 친구목록 */
+.user-list-title {
+  display: inline-flex;
+
+  /* width: 16rem; */
+  background-color: indianred;
+  color: aliceblue;
+  height: 2rem;
+  line-height: 2rem;
+  width: 10rem;
+  margin-left: 5rem;
+  padding-left: 2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+}
+
+.friend-photo {
+  background-image: url(../../../assets/images/apeach_sample2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px #333333;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+.user-name {
+  width: 14.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

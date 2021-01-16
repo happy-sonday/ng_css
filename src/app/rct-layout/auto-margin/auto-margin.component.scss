@@ -1,0 +1,50 @@
+/* margin-** auto로 정렬 */
+
+/* .flex_container {
+  display: flex;
+  //width: 600px;
+
+  //margin: 0 auto; //justify
+  //margin-left: auto; //오른쪽 정렬
+}
+
+.flex_item {
+  // min-width: 150px;
+  width: 150px;
+}
+
+.flex_item:last-child {
+  margin-left: auto;
+} */
+
+/* 가운데만 가변으로 변하는 컨테이너*/
+
+/* .flex_container {
+  display: flex;
+}
+
+.flex_item {
+  flex-grow: 1;
+}
+.flex_item:first-child {
+  flex-shrink: 0; //flex: 0 0 auto;
+  width: 150px;
+}
+
+.flex_item:last-child {
+  flex-shrink: 0;
+  width: 200px;
+}
+ */
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; //IE에서 버그 따라서 height를 써준다
+}
+
+.content {
+  overflow: auto;
+  flex: 1 auto;
+  padding: 1.5rem;
+}

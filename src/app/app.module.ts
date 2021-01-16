@@ -16,6 +16,25 @@ import { MarginOverwrapComponent } from './margin-overwrap/margin-overwrap.compo
 import { PositionTestComponent } from './position-test/position-test.component';
 import { FluxTestComponent } from './flux-test/flux-test.component';
 import { FlexGrownshrinkComponent } from './flex-grownshrink/flex-grownshrink.component';
+import { PostionTest2Component } from './postion-test2/postion-test2.component';
+import { PostionNavComponent } from './postion-nav/postion-nav.component';
+import { TableBorderComponent } from './table-border/table-border.component';
+import { OverlaytestComponent } from './overlaytest/overlaytest.component';
+
+import { OmLayoutComponent } from './om-layout/om-layout.component';
+import { RctLayoutComponent } from './rct-layout/rct-layout.component';
+import { ColumnComponent } from './rct-layout/column/column.component';
+import { AutoMarginComponent } from './rct-layout/auto-margin/auto-margin.component';
+import { AlignSelfComponent } from './rct-layout/align-self/align-self.component';
+import { MenuComponent } from './ui/menu/menu.component';
+import { UiComponent } from './ui/ui.component';
+import { MessageComponent } from './ui/message/message.component';
+import { ModalComponent } from './ui/modal/modal.component';
+import { CardListComponent } from './ui/card-list/card-list.component';
+import { ResponsivePageComponent } from './responsive-page/responsive-page.component';
+import { CardList2Component } from './ui/card-list2/card-list2.component';
+import { CardListReviewComponent } from './card-list-review/card-list-review.component';
+import { FlexHmpgComponent } from './flex-hmpg/flex-hmpg.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +51,40 @@ import { FlexGrownshrinkComponent } from './flex-grownshrink/flex-grownshrink.co
     MarginOverwrapComponent,
     PositionTestComponent,
     FluxTestComponent,
-    FlexGrownshrinkComponent
+    FlexGrownshrinkComponent,
+    PostionTest2Component,
+    PostionNavComponent,
+    TableBorderComponent,
+    OverlaytestComponent,
+
+    OmLayoutComponent,
+
+    RctLayoutComponent,
+
+    ColumnComponent,
+
+    AutoMarginComponent,
+
+    AlignSelfComponent,
+
+    MenuComponent,
+
+    UiComponent,
+
+    MessageComponent,
+
+    ModalComponent,
+
+    CardListComponent,
+
+    ResponsivePageComponent,
+
+
+    CardList2Component,
+
+    CardListReviewComponent,
+
+    FlexHmpgComponent
   ],
   imports: [
     BrowserModule,

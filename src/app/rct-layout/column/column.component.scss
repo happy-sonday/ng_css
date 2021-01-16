@@ -1,0 +1,39 @@
+html,
+body {
+  margin: 0;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+  //height: 100vh;//그냥 height를 쓰면 컨텐츠가 많아질때 border밖으로 튕겨나감
+  min-height: 100vh; //컨테이너가 컨텐츠의 양만큼 전체 감쌀 수 있다.
+  border: red 5px solid;
+  background-color: gray;
+}
+
+.flex_item {
+  flex: 1 auto; /* 일정 비율로 꽉차게 아이템들이 컨테이너에 꽉참 */
+  background-color: salmon;
+  border: 2px solid slategrey;
+}
+
+/* 크기가 커지면 줄바뀜 */
+//2단
+@media (min-width: 300px) {
+  .flex_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .flex_item {
+    width: 40%;
+  }
+}
+
+/* 3단 */
+@media (min-width: 500px) {
+  .flex_item {
+    width: 30%;
+  }
+}
