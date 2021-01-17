@@ -1,0 +1,31 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 1rem;
+
+  /* 구조 정의 */
+  grid-template-areas:
+    "header header header"
+    //". header header"//"none header header"
+    "sidebar-a main sidebar-b"
+    "footer footer footer";
+}
+/* cell 영역 이름 정의 따옴표쓰면 인식안되니 주의 */
+.header {
+  grid-area: header;
+}
+.sidebar-a {
+  grid-area: sidebar-a;
+}
+
+.sidebar-b {
+  grid-area: sidebar-b;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}

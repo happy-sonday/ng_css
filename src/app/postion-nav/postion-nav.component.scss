@@ -1,0 +1,6 @@
+nav ul li{
+  display: inline-block;//inline 요소를 block레벨로 감쌈
+  // display: inline;//위아래 마진 16 기본
+  border:2px solid red;
+  margin: 20px;
+}

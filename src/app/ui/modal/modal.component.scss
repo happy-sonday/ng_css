@@ -1,0 +1,50 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  width: 50vw;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.btn_wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+button {
+  border-radius: 10px;
+  width: 9rem;
+  height: 2rem;
+}
+
+.confirm {
+  background-color: #343a40;
+  color: white;
+  margin-right: 1rem;
+}
+
+.confirm::after {
+  margin-left: 0.5rem;
+  content: "✔";
+}
+
+.cancle {
+  background-color: white;
+  border: #343a40 1px solid;
+}
+.cancle:after {
+  content: "↩";
+  margin-left: 0.5rem;
+}

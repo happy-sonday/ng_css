@@ -1,0 +1,82 @@
+ol,
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+/* search */
+.search-form {
+  display: flex;
+  height: 40px;
+  margin: 20px 0;
+}
+
+.logo {
+  align-self: center;
+}
+
+.search-form input[type="search"] {
+  flex: 1;
+  margin: 0 3px;
+  border: 0;
+  border-radius: 0.3rem;
+  font-size: 1rem; //16px default
+  border: black 1px solid;
+}
+.search-form input[type="submit"] {
+  width: 4rem;
+  border: 0;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  background: green;
+}
+
+/* menu */
+.menu {
+  display: flex;
+}
+/* flex-grow는 explore에서 안먹으니
+width로 할당하자~ */
+.menu-item {
+  background: green;
+  //flex-grow: 1;
+  width: 25%;
+  transition: 0.5s;
+}
+/* 크롬 브라우저에서는 모바일 사이즈는 적용안됨 */
+.menu-item:hover {
+  //flex-grow: 1.5;
+  width: 35%;
+  background: crimson;
+}
+
+.menu-link {
+  display: block;
+  padding: 1em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; /* 밑줄 없애기 */
+  text-align: center;
+}
+
+.menu-link:hover {
+  color: black;
+}
+
+.info-list-item {
+  display: block; //flex인 경우 ellipsis가 적용안됨
+  //display: flex; /* before 아이콘 영역과 확실히 구분지어 들여쓰기 */
+  margin: 0.5rem 0;
+  white-space: nowrap; /* 줄바꿈 없이 한줄로 표시 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50%;
+}
+.info-list-item::before {
+  content: "➥";
+  margin-right: 0.5rem;
+  color: green;
+}
+
+/* bullet list */
