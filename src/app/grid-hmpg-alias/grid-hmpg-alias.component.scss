@@ -1,0 +1,393 @@
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 1rem;
+}
+
+.logo {
+  align-self: center;
+}
+
+.website-title {
+  color: #e50914;
+}
+.search-form {
+  display: flex;
+  height: 40px;
+  width: 300px;
+  max-width: 60%;
+  margin-right: 3rem;
+}
+
+.search-form input[type="search"] {
+  flex: 1;
+  min-width: 0;
+  margin-right: 10px;
+  border: 0;
+  border-radius: 0.3em;
+  font-size: 1rem;
+}
+.search-form input[type="submit"] {
+  width: 4em;
+  border: 0;
+  border-radius: 0.3em;
+  font-size: 1rem;
+  background: #e50914;
+  color: white;
+}
+
+/* modal */
+.modal {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-switch {
+  font-size: 2rem;
+}
+
+#modal-switch:checked ~ .modal {
+  display: flex;
+}
+
+/* 라벨과 괄호 띄어쓰면 안됨 */
+label[for="modal-switch"] {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+label[for="modal-switch"]:before {
+  content: "❤";
+  font-size: 2rem;
+}
+
+#modal-switch:checked ~ label[for="modal-switch"]:before {
+  color: #e50914;
+}
+
+#modal-switch,
+label[for="modal-switch"] span {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.dialog {
+  width: 50vw;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: white;
+}
+
+.btn_wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+button {
+  border-radius: 10px;
+  width: 9rem;
+  height: 2rem;
+}
+
+.confirm {
+  background-color: #343a40;
+  color: white;
+  margin-right: 1rem;
+}
+
+.confirm::after {
+  margin-left: 0.5rem;
+  content: "✔";
+}
+
+.cancle {
+  background-color: white;
+  border: #343a40 1px solid;
+}
+.cancle:after {
+  content: "↩";
+  margin-left: 0.5rem;
+}
+
+/* menu */
+.menu {
+  display: flex;
+}
+/* flex-grow는 explore에서 안먹으니
+width로 할당하자~ */
+.menu-item {
+  background: #e50914;
+  //flex-grow: 1;
+  width: 25%;
+  transition: 0.5s;
+}
+/* 크롬 브라우저에서는 모바일 사이즈는 적용안됨 */
+.menu-item:hover {
+  //flex-grow: 1.5;
+  width: 35%;
+  background: white;
+}
+
+.menu-link {
+  display: block;
+  padding: 1em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none; /* 밑줄 없애기 */
+  text-align: center;
+}
+
+.menu-link:hover {
+  color: black;
+}
+
+.info-list-item {
+  display: block; //flex인 경우 ellipsis가 적용안됨
+  //display: flex; /* before 아이콘 영역과 확실히 구분지어 들여쓰기 */
+  margin: 0.5rem 0;
+  white-space: nowrap; /* 줄바꿈 없이 한줄로 표시 */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 50%;
+}
+.info-list-item::before {
+  content: "➥";
+  margin-right: 0.5rem;
+  color: #e50914;
+}
+
+/* primary */
+.primary {
+  padding: 1rem;
+}
+
+/* card-list를 grid로 표현 */
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+  gap: 1%;
+}
+.card-item {
+  margin-bottom: 2rem;
+}
+.card-item:hover {
+  transform: scale(0.98);
+  transition: 0.3s;
+}
+
+.card-image {
+  background: lightgray;
+  // height: 300px;
+  height: 0;
+  padding-bottom: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-desc {
+  padding: 1em;
+  background: white;
+}
+
+/* .card-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.card-item:hover {
+  transform: scale(0.98);
+  transition: 0.3s;
+}
+
+.card-image {
+  background: lightgray;
+  // height: 300px;
+  height: 0;
+  padding-bottom: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-desc {
+  flex: 1 1 auto;
+  padding: 1em;
+  background: white;
+} */
+
+/* @media (min-width: 600px) {
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+  }
+
+  .card-item {
+    width: 50%;
+    padding: 0 1rem;
+  }
+} */
+
+/* aside */
+.side {
+  padding: 1rem;
+}
+
+.side-a {
+  background: white;
+}
+
+.side-b {
+  background: #666666;
+  color: white;
+}
+
+/* message */
+.user-photo {
+  flex-shrink: 0; //이미지가 화면크기 컨텐츠 내용에따라 찌그러지지 않도록 설정
+  background-image: url(../../assets/images/apeach_sample.jpg);
+  width: 50px;
+  height: 50px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  background-color: gold;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; //축소되서전면이 들어가게 된다
+}
+
+.user-item {
+  display: flex; //단독으로 속성 지정시컨텐츠 내용에 따라 찌그러짐
+  //따라서 user-photo에 찌그러지지 않도록 shrink 기본값 1을 0으로 설정한다
+  //margin-bottom: 1.5rem; //html의 폰트사이즈를 따라 커지겠다는 것이고
+  margin-bottom: 1.5em; // 은 해당 user-item 엘리먼트 폰트사이즈를 기준으로 하겠다는 것
+  //현재는 font-size를 지정한것이 없기때문에 1.5rem=1.5em이 같은것
+  font-size: 20px; //이렇게 폰트사이즈를 지정할 경우 1.5rem은 html의 영향을 받기때문에 화면이 커져도 margin 변화가 화면이 작았을때와 차이가 없지만
+  //em의 경우 user-item의 element기분의 font-size를 기준으로 하기때문에 비율만큼 영향을받아 요소간의 margin이 작았을때비해 더 커진다
+}
+
+/* 친구목록 */
+.user-list-title {
+  display: inline-flex;
+
+  /* width: 16rem; */
+  background-color: #e50914;
+  color: aliceblue;
+  height: 2rem;
+  line-height: 2rem;
+  width: 10rem;
+
+  padding-left: 2rem;
+  border-radius: 3rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.footer {
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+  width: 17rem;
+  margin: 0 auto;
+  max-width: 80%;
+  margin-bottom: 1rem;
+}
+.footer a {
+  color: white;
+}
+
+.friend-photo {
+  background-image: url(../../assets/images/apeach_sample2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 1px #333333;
+  background-size: cover;
+  flex-shrink: 0;
+}
+
+.user-name {
+  width: 14.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+  .page {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-areas:
+      "header header header"
+      "menu menu menu"
+      "side-a primary side-b"
+      "footer footer footer";
+  }
+
+  .header {
+    grid-area: header;
+  }
+  .menu {
+    grid-area: menu;
+  }
+
+  .side-a {
+    grid-area: side-a;
+  }
+
+  .side-b {
+    grid-area: side-b;
+  }
+
+  .primary {
+    grid-area: primary;
+  }
+
+  .footer {
+    grid-area: footer;
+    padding: 1rem;
+    border-top: 1px solid #e50914;
+    //oder는 0부터 적용되서 앞자리에 차지해 4로 지정해줘야 내려감
+    order: 4;
+    width: 100%;
+  }
+}
+
+//1400px이 넘어가는 순간 사이드 메뉴 고정
+@media (min-width: 1400px) {
+  //일정크기가 넘어서면 primary와 side-b 에 생기는 여백때문에 지정
+  .page {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+  }
+}

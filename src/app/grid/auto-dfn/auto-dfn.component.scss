@@ -1,0 +1,10 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  /* 반응형 페이지 진행중 3번째 줄까지만 100px 적용되고 다음 줄부터는 적용안됨 */
+  //grid-template-rows: repeat(3, minmax(100px, auto)); //최소 높이 100px 보장
+  grid-auto-rows: minmax(100px, auto);
+  //grid-auto-rows: 300px; //위아래 모두 300px로 적용가능
+  gap: 20px;
+}
